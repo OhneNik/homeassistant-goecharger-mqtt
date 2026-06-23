@@ -357,7 +357,7 @@ trigger:
 condition: []
 action:
   - action: goecharger_mqtt.update_grid_power
-      # Change to your charger ID here
+      # Change to your device ID here
       device_id: !input wallbox_id
       # Please provide your own entities here, as described above
       power_grid: "{{ states('sensor.meter_active_power') | float }}"
